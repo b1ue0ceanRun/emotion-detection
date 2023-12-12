@@ -42,6 +42,7 @@ class Workspace():
             f'_wd={self.config["weight_decay"]}'
             f'_alpha={self.config["alpha"]}'
             f'_lamb={self.config["lamb"]}'
+            f'_rd={self.config["root_dir"]}'
         )
 
         # setup writers
@@ -67,6 +68,8 @@ class Workspace():
             self.config['lamb'] = args.lamb
         if args.pretrained is not None:
             self.config['pretrained'] = args.pretrained
+        if args.rd is not None:
+            self.config['root_dir'] = args.rd
         self.config['deterministic'] = args.deterministic
 
     def setup(self):
