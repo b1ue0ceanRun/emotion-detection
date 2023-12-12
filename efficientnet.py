@@ -6,9 +6,6 @@ import sys
 import os
 
 from datetime import timedelta
-
-from torchvision.models import EfficientNet_B0_Weights
-
 from workspace import Workspace
 
 import torch
@@ -41,6 +38,23 @@ parser.add_argument('--rd', type=str)
 parser.add_argument('--pretrained', type=str, default='msceleb')
 parser.add_argument('--deterministic', default=False, action='store_true')
 
+def build_model(pretrained=True, fine_tune=True, num_classes=7):
+    if pretrained:
+        print('[INFO]: Loading pre-trained weights')
+    else:
+        print('[INFO]: Not loading pre-trained weights')
+    model = models.efficientnet_b0(pretrained=pretrained)
+    if fine_tune:
+        print('[INFO]: Fine-tuning all layers...')
+        for params in model.parameters():
+            params.requires_grad = True
+    elif not fine_tune:
+        print('[INFO]: Freezing hidden layers...')
+        for params in model.parameters():
+            params.requires_grad = False
+    # Change the final classification head.
+    model.classifier[1] = nn.Linear(in_features=1280, out_features=num_classes)
+    return model
 
 def main(cfg):
 
@@ -96,20 +110,14 @@ def main(cfg):
 
     # Create Model
     # ------------
-    print('[>] Model '.ljust(64, '-'))
-    if cfg['arch'] == 'efficientnet':
-        feat_size = 512
-        if not cfg['pretrained'] == '':
-            model = models.efficientnet_b0(weights=EfficientNet_B0_Weights.DEFAULT)
-            model.fc = nn.Linear(feat_size, 7)
-    else:
-        raise NotImplementedError('---')
+    model = build_model()
     model = torch.nn.DataParallel(model).to(device)
     print('[*] Model initialized!')
 
 
     # define loss function (criterion) and optimizer
     # ----------------------------------------------
+    feat_size = 1280
     criterion = {
         'softmax': nn.CrossEntropyLoss().to(device),
         'center': SparseCenterLoss(7, feat_size).to(device)
