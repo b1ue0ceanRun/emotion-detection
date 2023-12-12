@@ -196,8 +196,9 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg ):
 
             # compute output
             output = model(images)
+            _model = model.module
             with torch.no_grad():
-                feat = model.extract_features(images)
+                feat = _model.extract_features(images)
             print(type(feat))
             l_softmax = criterion['softmax'](output, target)
             l_center = criterion['center'](feat, target)
