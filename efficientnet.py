@@ -198,7 +198,10 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg ):
             output = model(images)
             _model = model.module
             with torch.no_grad():
-                feat = _model.extract_features(images)
+                # 访问特定块的特征，例如第4个块
+                block_number = 4
+                feat = _model.extract_endpoints(images, 'block{}'.format(block_number))[
+                    'block{}'.format(block_number)]
             print(type(feat))
             l_softmax = criterion['softmax'](output, target)
             l_center = criterion['center'](feat, target)
