@@ -123,7 +123,7 @@ def main(cfg):
     feat_size = 1280
     criterion = {
         'softmax': nn.CrossEntropyLoss().to(device),
-        'center': SparseCenterLoss(7, feat_size).to(device)
+        # 'center': SparseCenterLoss(7, feat_size).to(device)
     }
     optimizer = {
         'softmax': torch.optim.SGD(model.parameters(), cfg['lr'],
@@ -175,10 +175,10 @@ def main(cfg):
     print(stat)
 
 
-def train(train_loader, model, criterion, optimizer, epoch, cfg ):
+def train(train_loader, model, criterion, optimizer, epoch, cfg):
     losses = {
         'softmax': AverageMeter(),
-        'center': AverageMeter(),
+        # 'center': AverageMeter(),
         'total': AverageMeter()
     }
     accs = AverageMeter()
@@ -196,22 +196,16 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg ):
 
             # compute output
             output = model(images)
-            _model = model.module
-            with torch.no_grad():
-                # 访问特定块的特征，例如第4个块
-                block_number = 4
-                feat = _model.extract_endpoints(images, 'block{}'.format(block_number))[
-                    'block{}'.format(block_number)]
-            print(type(feat))
+
             l_softmax = criterion['softmax'](output, target)
-            l_center = criterion['center'](feat, target)
-            l_total = l_softmax + cfg['lamb'] * l_center
+            # l_center = criterion['center'](feat, target)
+            # l_total = l_softmax + cfg['lamb'] * l_center
 
             # measure accuracy and record loss
             acc, pred = accuracy(output, target)
             losses['softmax'].update(l_softmax.item(), images.size(0))
             # losses['center'].update(l_center.item(), images.size(0))
-            losses['total'].update(l_total.item(), images.size(0))
+            # losses['total'].update(l_total.item(), images.size(0))
             accs.update(acc.item(), images.size(0))
 
             # collect for metrics
@@ -221,16 +215,15 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg ):
 
             # compute grads + opt step
             optimizer['softmax'].zero_grad()
-            optimizer['center'].zero_grad()
-            l_total.backward()
+            # optimizer['center'].zero_grad()
+            # l_total.backward()
+            l_softmax.backward()
             optimizer['softmax'].step()
-            optimizer['center'].step()
+            # optimizer['center'].step()
 
             # progressbar
             pbar.set_description(f'TRAINING [{epoch:03d}/{cfg["epochs"]}]')
             pbar.set_postfix({'L': losses["total"].avg,
-                              'Ls': losses["softmax"].avg,
-                              'Lsc': losses["center"].avg,
                               'acc': accs.avg})
             pbar.update(1)
 
