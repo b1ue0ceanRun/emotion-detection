@@ -81,7 +81,7 @@ def main(cfg):
     # test set
     val_loader = torch.utils.data.DataLoader(
         dataset=datasets.ImageFolder(
-            root=os.path.join(cfg['root_dir'], 'test'),
+            root=os.path.join(cfg['root_dir'], 'validation'),
             transform=transforms.Compose([
                 transforms.Resize(256),
                 transforms.CenterCrop(224),
