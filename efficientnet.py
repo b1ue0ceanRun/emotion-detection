@@ -6,6 +6,9 @@ import sys
 import os
 
 from datetime import timedelta
+
+from torchvision.models import EfficientNet_B0_Weights
+
 from workspace import Workspace
 
 import torch
@@ -43,7 +46,7 @@ def build_model(pretrained=True, fine_tune=True, num_classes=7):
         print('[INFO]: Loading pre-trained weights')
     else:
         print('[INFO]: Not loading pre-trained weights')
-    model = models.efficientnet_b0(pretrained=pretrained)
+    model = models.efficientnet_b0(weights=EfficientNet_B0_Weights.DEFAULT)
     if fine_tune:
         print('[INFO]: Fine-tuning all layers...')
         for params in model.parameters():
@@ -192,9 +195,9 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg ):
             target = target.to(device)
 
             # compute output
-            feat, output, A = model(images)
+            feat, output = model(images)
             l_softmax = criterion['softmax'](output, target)
-            l_center = criterion['center'](feat, A, target)
+            l_center = criterion['center'](feat, target)
             l_total = l_softmax + cfg['lamb'] * l_center
 
             # measure accuracy and record loss
