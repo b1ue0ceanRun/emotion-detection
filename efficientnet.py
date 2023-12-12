@@ -123,13 +123,13 @@ def main(cfg):
     feat_size = 1280
     criterion = {
         'softmax': nn.CrossEntropyLoss().to(device),
-        # 'center': SparseCenterLoss(7, feat_size).to(device)
+        'center': SparseCenterLoss(7, feat_size).to(device)
     }
     optimizer = {
         'softmax': torch.optim.SGD(model.parameters(), cfg['lr'],
                                    momentum=cfg['momentum'],
                                    weight_decay=cfg['weight_decay']),
-        'center': torch.optim.SGD(criterion['center'].parameters(), cfg['alpha'])
+        # 'center': torch.optim.SGD(criterion['center'].parameters(), cfg['alpha'])
     }
     # lr scheduler
     scheduler = torch.optim.lr_scheduler.StepLR(optimizer['softmax'], step_size=20, gamma=0.1)
@@ -196,8 +196,11 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg ):
 
             # compute output
             output = model(images)
+            with torch.no_grad():
+                feat = model.extract_features(images)
+            print(type(feat))
             l_softmax = criterion['softmax'](output, target)
-            # l_center = criterion['center'](feat, target)
+            l_center = criterion['center'](feat, target)
             l_total = l_softmax + cfg['lamb'] * l_center
 
             # measure accuracy and record loss
