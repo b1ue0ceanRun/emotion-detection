@@ -232,7 +232,7 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg):
         f'[-] TRAIN [{epoch:03d}/{cfg["epochs"]}] | '
         f'L={losses["total"].avg:.4f} | '
         f'Ls={losses["softmax"].avg:.4f} | '
-        f'Lsc={losses["center"].avg:.4f} | '
+        # f'Lsc={losses["center"].avg:.4f} | '
         f'acc={accs.avg:.4f} | '
         f'rec={metrics["rec"]:.4f} | '
         f'f1={metrics["f1"]:.4f} | '
@@ -247,7 +247,7 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg):
 def validate(valid_loader, model, criterion, epoch, cfg):
     losses = {
         'softmax': AverageMeter(),
-        'center': AverageMeter(),
+        # 'center': AverageMeter(),
         'total': AverageMeter()
     }
     accs = AverageMeter()
@@ -264,16 +264,16 @@ def validate(valid_loader, model, criterion, epoch, cfg):
                 target = target.to(device)
 
                 # compute output
-                feat, output, A = model(images)
+                output= model(images)
                 l_softmax = criterion['softmax'](output, target)
-                l_center = criterion['center'](feat, A, target)
-                l_total = l_softmax + cfg['lamb'] * l_center
+                # l_center = criterion['center'](feat, A, target)
+                # l_total = l_softmax + cfg['lamb'] * l_center
 
                 # measure accuracy and record loss
                 acc, pred = accuracy(output, target)
                 losses['softmax'].update(l_softmax.item(), images.size(0))
-                losses['center'].update(l_center.item(), images.size(0))
-                losses['total'].update(l_total.item(), images.size(0))
+                # losses['center'].update(l_center.item(), images.size(0))
+                # losses['total'].update(l_total.item(), images.size(0))
                 accs.update(acc.item(), images.size(0))
 
                 # collect for metrics
@@ -290,7 +290,7 @@ def validate(valid_loader, model, criterion, epoch, cfg):
         f'[-] VALID [{epoch:03d}/{cfg["epochs"]}] | '
         f'L={losses["total"].avg:.4f} | '
         f'Ls={losses["softmax"].avg:.4f} | '
-        f'Lsc={losses["center"].avg:.4f} | '
+        # f'Lsc={losses["center"].avg:.4f} | '
         f'acc={accs.avg:.4f} | '
         f'rec={metrics["rec"]:.4f} | '
         f'f1={metrics["f1"]:.4f} | '
@@ -316,7 +316,7 @@ def validate(valid_loader, model, criterion, epoch, cfg):
 def write_log(losses, acc, metrics, e, tag='set'):
     # tensorboard
     writer.add_scalar(f'L_softmax/{tag}', losses['softmax'].avg, e)
-    writer.add_scalar(f'L_center/{tag}', losses['center'].avg, e)
+    # writer.add_scalar(f'L_center/{tag}', losses['center'].avg, e)
     writer.add_scalar(f'L_total/{tag}', losses['total'].avg, e)
     writer.add_scalar(f'acc/{tag}', acc, e)
     writer.add_scalar(f'rec/{tag}', metrics['rec'], e)
