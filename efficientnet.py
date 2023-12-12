@@ -123,7 +123,7 @@ def main(cfg):
     feat_size = 1280
     criterion = {
         'softmax': nn.CrossEntropyLoss().to(device),
-        'center': SparseCenterLoss(7, feat_size).to(device)
+        # 'center': SparseCenterLoss(7, feat_size).to(device)
     }
     optimizer = {
         'softmax': torch.optim.SGD(model.parameters(), cfg['lr'],
@@ -195,15 +195,15 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg ):
             target = target.to(device)
 
             # compute output
-            feat, output = model(images)
+            output = model(images)
             l_softmax = criterion['softmax'](output, target)
-            l_center = criterion['center'](feat, target)
+            # l_center = criterion['center'](feat, target)
             l_total = l_softmax + cfg['lamb'] * l_center
 
             # measure accuracy and record loss
             acc, pred = accuracy(output, target)
             losses['softmax'].update(l_softmax.item(), images.size(0))
-            losses['center'].update(l_center.item(), images.size(0))
+            # losses['center'].update(l_center.item(), images.size(0))
             losses['total'].update(l_total.item(), images.size(0))
             accs.update(acc.item(), images.size(0))
 
