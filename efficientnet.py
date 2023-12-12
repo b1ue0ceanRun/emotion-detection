@@ -37,6 +37,7 @@ parser.add_argument('--bs', type=int)
 parser.add_argument('--epochs', type=int)
 parser.add_argument('--alpha', type=float)
 parser.add_argument('--lamb', type=float)
+parser.add_argument('--rd', type=str)
 parser.add_argument('--pretrained', type=str, default='msceleb')
 parser.add_argument('--deterministic', default=False, action='store_true')
 
