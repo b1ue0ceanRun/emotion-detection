@@ -102,9 +102,6 @@ def main(cfg):
         if not cfg['pretrained'] == '':
             model = models.efficientnet_b0(weights=EfficientNet_B0_Weights.DEFAULT)
             model.fc = nn.Linear(feat_size, 7)
-        else:
-            print('[!] model is trained from scratch!')
-            model = models.efficientnet_b0(num_classes=7, pretrained=cfg['pretrained'])
     else:
         raise NotImplementedError('---')
     model = torch.nn.DataParallel(model).to(device)

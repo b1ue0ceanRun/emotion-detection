@@ -4,6 +4,7 @@ import pprint
 import time
 import sys
 import os
+import timm
 
 from datetime import timedelta
 from workspace import Workspace
@@ -96,8 +97,11 @@ def main(cfg):
     if cfg['arch'] == 'resnet18':
         feat_size = 512
         if not cfg['pretrained'] == '':
-            model = resnet18(pretrained=cfg['pretrained'])
-            model.fc = nn.Linear(feat_size, 7)
+            # model = resnet18(pretrained=cfg['pretrained'])
+            # model.fc = nn.Linear(feat_size, 7)
+            model = timm.create_model('efficientnet_b0',
+                              pretrained=True,
+                              num_classes=7)
         else:
             print('[!] model is trained from scratch!')
             model = resnet18(num_classes=7, pretrained=cfg['pretrained'])
