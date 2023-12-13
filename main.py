@@ -34,8 +34,10 @@ parser.add_argument('--bs', type=int)
 parser.add_argument('--epochs', type=int)
 parser.add_argument('--alpha', type=float)
 parser.add_argument('--lamb', type=float)
+parser.add_argument('--rd', type=str)
 parser.add_argument('--pretrained', type=str, default='msceleb')
 parser.add_argument('--deterministic', default=False, action='store_true')
+
 
 
 def main(cfg):
@@ -77,7 +79,7 @@ def main(cfg):
     # test set
     val_loader = torch.utils.data.DataLoader(
         dataset=datasets.ImageFolder(
-            root=os.path.join(cfg['root_dir'], 'test'),
+            root=os.path.join(cfg['root_dir'], 'validation'),
             transform=transforms.Compose([
                 transforms.Resize(256),
                 transforms.CenterCrop(224),
