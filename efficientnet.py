@@ -227,7 +227,7 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg):
             pbar.update(1)
 
     metrics = calc_metrics(y_pred, y_true, y_scores)
-    print(666666666666666666666666666666666666666666)
+    # print(666666666666666666666666666666666666666666)
     progress = (
         f'[-] TRAIN [{epoch:03d}/{cfg["epochs"]}] | '
         # f'L={losses["total"].avg:.4f} | '
@@ -240,9 +240,9 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg):
         f'aucroc={metrics["aucroc"]:.4f}'
     )
     print(progress)
-    print(7777777777777777777777777777777777777777777)
+    # print(7777777777777777777777777777777777777777777)
     write_log(losses, accs.avg, metrics, epoch, tag='train')
-    print(88888888888888888888888888888888888888888888)
+    # print(88888888888888888888888888888888888888888888)
 
 
 
