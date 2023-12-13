@@ -179,7 +179,7 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg):
     losses = {
         'softmax': AverageMeter(),
         # 'center': AverageMeter(),
-        'total': AverageMeter()
+        # 'total': AverageMeter()
     }
     accs = AverageMeter()
     y_pred, y_true, y_scores = [], [], []
@@ -223,14 +223,13 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg):
 
             # progressbar
             pbar.set_description(f'TRAINING [{epoch:03d}/{cfg["epochs"]}]')
-            pbar.set_postfix({'L': losses["total"].avg,
-                              'acc': accs.avg})
+            pbar.set_postfix( {'acc': accs.avg})
             pbar.update(1)
 
     metrics = calc_metrics(y_pred, y_true, y_scores)
     progress = (
         f'[-] TRAIN [{epoch:03d}/{cfg["epochs"]}] | '
-        f'L={losses["total"].avg:.4f} | '
+        # f'L={losses["total"].avg:.4f} | '
         f'Ls={losses["softmax"].avg:.4f} | '
         # f'Lsc={losses["center"].avg:.4f} | '
         f'acc={accs.avg:.4f} | '
@@ -288,7 +287,7 @@ def validate(valid_loader, model, criterion, epoch, cfg):
     metrics = calc_metrics(y_pred, y_true, y_scores)
     progress = (
         f'[-] VALID [{epoch:03d}/{cfg["epochs"]}] | '
-        f'L={losses["total"].avg:.4f} | '
+        # f'L={losses["total"].avg:.4f} | '
         f'Ls={losses["softmax"].avg:.4f} | '
         # f'Lsc={losses["center"].avg:.4f} | '
         f'acc={accs.avg:.4f} | '
@@ -317,7 +316,7 @@ def write_log(losses, acc, metrics, e, tag='set'):
     # tensorboard
     writer.add_scalar(f'L_softmax/{tag}', losses['softmax'].avg, e)
     # writer.add_scalar(f'L_center/{tag}', losses['center'].avg, e)
-    writer.add_scalar(f'L_total/{tag}', losses['total'].avg, e)
+    # writer.add_scalar(f'L_total/{tag}', losses['total'].avg, e)
     writer.add_scalar(f'acc/{tag}', acc, e)
     writer.add_scalar(f'rec/{tag}', metrics['rec'], e)
     writer.add_scalar(f'f1/{tag}', metrics['f1'], e)
