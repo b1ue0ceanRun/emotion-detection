@@ -1,0 +1,358 @@
+TRAINING [001/60]: : 451it [01:42,  4.39it/s, acc=0.508]
+[-] TRAIN [001/60] | Ls=1.2881 | acc=0.5077 | rec=0.4206 | f1=0.4154 | aucpr=0.4293 | aucroc=0.7902
+VALIDATING [001/60]: : 111it [00:14,  7.65it/s]
+[-] VALID [001/60] | Ls=1.0663 | acc=0.6067 | rec=0.5196 | f1=0.5199 | aucpr=0.5362 | aucroc=0.8673
+[*] epoch time = 117.55s | lr = 0.01
+
+TRAINING [002/60]: : 451it [01:33,  4.84it/s, acc=0.621]
+[-] TRAIN [002/60] | Ls=1.0035 | acc=0.6209 | rec=0.5448 | f1=0.5531 | aucpr=0.5463 | aucroc=0.8750
+VALIDATING [002/60]: : 111it [00:08, 12.66it/s]
+[-] VALID [002/60] | Ls=0.9783 | acc=0.6361 | rec=0.5730 | f1=0.5787 | aucpr=0.5801 | aucroc=0.8852
+[*] epoch time = 102.22s | lr = 0.01
+
+TRAINING [003/60]: : 451it [01:33,  4.84it/s, acc=0.667]
+[-] TRAIN [003/60] | Ls=0.8886 | acc=0.6669 | rec=0.6083 | f1=0.6203 | aucpr=0.6073 | aucroc=0.8971
+VALIDATING [003/60]: : 111it [00:08, 12.98it/s]
+[-] VALID [003/60] | Ls=0.9103 | acc=0.6589 | rec=0.6162 | f1=0.6196 | aucpr=0.6083 | aucroc=0.8945
+[*] epoch time = 102.11s | lr = 0.01
+
+TRAINING [004/60]: : 451it [01:33,  4.84it/s, acc=0.703]
+[-] TRAIN [004/60] | Ls=0.8011 | acc=0.7029 | rec=0.6638 | f1=0.6742 | aucpr=0.6587 | aucroc=0.9123
+VALIDATING [004/60]: : 111it [00:08, 12.98it/s]
+[-] VALID [004/60] | Ls=0.9382 | acc=0.6564 | rec=0.6219 | f1=0.6211 | aucpr=0.6109 | aucroc=0.8918
+[*] epoch time = 101.99s | lr = 0.01
+
+TRAINING [005/60]: : 451it [01:33,  4.85it/s, acc=0.729]
+[-] TRAIN [005/60] | Ls=0.7346 | acc=0.7287 | rec=0.7046 | f1=0.7117 | aucpr=0.6947 | aucroc=0.9217
+VALIDATING [005/60]: : 111it [00:09, 11.93it/s]
+[-] VALID [005/60] | Ls=0.9008 | acc=0.6766 | rec=0.6573 | f1=0.6466 | aucpr=0.6354 | aucroc=0.8995
+[*] epoch time = 102.73s | lr = 0.01
+
+TRAINING [006/60]: : 451it [01:33,  4.84it/s, acc=0.751]
+[-] TRAIN [006/60] | Ls=0.6707 | acc=0.7513 | rec=0.7312 | f1=0.7352 | aucpr=0.7185 | aucroc=0.9295
+VALIDATING [006/60]: : 111it [00:08, 12.79it/s]
+[-] VALID [006/60] | Ls=0.9168 | acc=0.6763 | rec=0.6591 | f1=0.6503 | aucpr=0.6479 | aucroc=0.9006
+[*] epoch time = 102.13s | lr = 0.01
+
+TRAINING [007/60]: : 451it [01:33,  4.84it/s, acc=0.776]
+[-] TRAIN [007/60] | Ls=0.6080 | acc=0.7757 | rec=0.7556 | f1=0.7590 | aucpr=0.7494 | aucroc=0.9381
+VALIDATING [007/60]: : 111it [00:08, 12.60it/s]
+[-] VALID [007/60] | Ls=0.9371 | acc=0.6816 | rec=0.6361 | f1=0.6506 | aucpr=0.6598 | aucroc=0.9039
+[*] epoch time = 102.19s | lr = 0.01
+
+TRAINING [008/60]: : 451it [01:33,  4.84it/s, acc=0.793]
+[-] TRAIN [008/60] | Ls=0.5562 | acc=0.7934 | rec=0.7833 | f1=0.7853 | aucpr=0.7720 | aucroc=0.9437
+VALIDATING [008/60]: : 111it [00:08, 13.07it/s]
+[-] VALID [008/60] | Ls=0.9705 | acc=0.6787 | rec=0.6533 | f1=0.6526 | aucpr=0.6637 | aucroc=0.9041
+[*] epoch time = 101.85s | lr = 0.01
+
+TRAINING [009/60]: : 451it [01:33,  4.84it/s, acc=0.808]
+[-] TRAIN [009/60] | Ls=0.5201 | acc=0.8083 | rec=0.7941 | f1=0.7982 | aucpr=0.7884 | aucroc=0.9487
+VALIDATING [009/60]: : 111it [00:08, 12.62it/s]
+[-] VALID [009/60] | Ls=0.9944 | acc=0.6745 | rec=0.6402 | f1=0.6549 | aucpr=0.6517 | aucroc=0.9013
+[*] epoch time = 102.17s | lr = 0.01
+
+TRAINING [010/60]: : 451it [01:33,  4.84it/s, acc=0.824]
+[-] TRAIN [010/60] | Ls=0.4803 | acc=0.8243 | rec=0.8124 | f1=0.8170 | aucpr=0.8031 | aucroc=0.9531
+VALIDATING [010/60]: : 111it [00:09, 12.18it/s]
+[-] VALID [010/60] | Ls=1.0625 | acc=0.6683 | rec=0.6538 | f1=0.6435 | aucpr=0.6331 | aucroc=0.8953
+[*] epoch time = 102.39s | lr = 0.01
+
+TRAINING [011/60]: : 451it [01:33,  4.84it/s, acc=0.835]
+[-] TRAIN [011/60] | Ls=0.4497 | acc=0.8352 | rec=0.8283 | f1=0.8302 | aucpr=0.8200 | aucroc=0.9576
+VALIDATING [011/60]: : 111it [00:08, 12.83it/s]
+[-] VALID [011/60] | Ls=1.0384 | acc=0.6814 | rec=0.6626 | f1=0.6601 | aucpr=0.6618 | aucroc=0.9017
+[*] epoch time = 102.04s | lr = 0.01
+
+TRAINING [012/60]: : 451it [01:33,  4.84it/s, acc=0.851]
+[-] TRAIN [012/60] | Ls=0.4105 | acc=0.8506 | rec=0.8433 | f1=0.8444 | aucpr=0.8332 | aucroc=0.9618
+VALIDATING [012/60]: : 111it [00:08, 12.49it/s]
+[-] VALID [012/60] | Ls=1.0693 | acc=0.6677 | rec=0.6529 | f1=0.6498 | aucpr=0.6530 | aucroc=0.8974
+[*] epoch time = 102.21s | lr = 0.01
+
+TRAINING [013/60]: : 451it [01:32,  4.85it/s, acc=0.858]
+[-] TRAIN [013/60] | Ls=0.3870 | acc=0.8580 | rec=0.8519 | f1=0.8538 | aucpr=0.8462 | aucroc=0.9651
+VALIDATING [013/60]: : 111it [00:08, 12.86it/s]
+[-] VALID [013/60] | Ls=1.1277 | acc=0.6761 | rec=0.6656 | f1=0.6654 | aucpr=0.6618 | aucroc=0.9005
+[*] epoch time = 101.89s | lr = 0.01
+
+TRAINING [014/60]: : 451it [01:33,  4.84it/s, acc=0.869]
+[-] TRAIN [014/60] | Ls=0.3619 | acc=0.8687 | rec=0.8616 | f1=0.8628 | aucpr=0.8521 | aucroc=0.9673
+VALIDATING [014/60]: : 111it [00:08, 12.88it/s]
+[-] VALID [014/60] | Ls=1.1625 | acc=0.6823 | rec=0.6650 | f1=0.6636 | aucpr=0.6649 | aucroc=0.9014
+[*] epoch time = 102.00s | lr = 0.01
+
+TRAINING [015/60]: : 451it [01:33,  4.84it/s, acc=0.875]
+[-] TRAIN [015/60] | Ls=0.3415 | acc=0.8747 | rec=0.8711 | f1=0.8725 | aucpr=0.8624 | aucroc=0.9699
+VALIDATING [015/60]: : 111it [00:09, 12.20it/s]
+[-] VALID [015/60] | Ls=1.1491 | acc=0.6755 | rec=0.6606 | f1=0.6669 | aucpr=0.6621 | aucroc=0.8977
+[*] epoch time = 102.44s | lr = 0.01
+
+TRAINING [016/60]: : 451it [01:33,  4.84it/s, acc=0.878]
+[-] TRAIN [016/60] | Ls=0.3359 | acc=0.8778 | rec=0.8722 | f1=0.8746 | aucpr=0.8691 | aucroc=0.9710
+VALIDATING [016/60]: : 111it [00:08, 12.92it/s]
+[-] VALID [016/60] | Ls=1.1588 | acc=0.6813 | rec=0.6625 | f1=0.6650 | aucpr=0.6532 | aucroc=0.8971
+[*] epoch time = 101.92s | lr = 0.01
+
+TRAINING [017/60]: : 451it [01:33,  4.84it/s, acc=0.886]
+[-] TRAIN [017/60] | Ls=0.3158 | acc=0.8863 | rec=0.8812 | f1=0.8817 | aucpr=0.8719 | aucroc=0.9725
+VALIDATING [017/60]: : 111it [00:08, 12.38it/s]
+[-] VALID [017/60] | Ls=1.1995 | acc=0.6834 | rec=0.6579 | f1=0.6721 | aucpr=0.6739 | aucroc=0.9027
+[*] epoch time = 102.33s | lr = 0.01
+
+TRAINING [018/60]: : 451it [01:33,  4.84it/s, acc=0.89]
+[-] TRAIN [018/60] | Ls=0.3071 | acc=0.8900 | rec=0.8858 | f1=0.8862 | aucpr=0.8756 | aucroc=0.9738
+VALIDATING [018/60]: : 111it [00:08, 12.41it/s]
+[-] VALID [018/60] | Ls=1.1625 | acc=0.6752 | rec=0.6612 | f1=0.6633 | aucpr=0.6590 | aucroc=0.8981
+[*] epoch time = 102.26s | lr = 0.01
+
+TRAINING [019/60]: : 451it [01:33,  4.84it/s, acc=0.893]
+[-] TRAIN [019/60] | Ls=0.3021 | acc=0.8928 | rec=0.8871 | f1=0.8880 | aucpr=0.8808 | aucroc=0.9747
+VALIDATING [019/60]: : 111it [00:08, 12.76it/s]
+[-] VALID [019/60] | Ls=1.1848 | acc=0.6753 | rec=0.6668 | f1=0.6599 | aucpr=0.6499 | aucroc=0.8973
+[*] epoch time = 102.11s | lr = 0.01
+
+TRAINING [020/60]: : 451it [01:33,  4.84it/s, acc=0.893]
+[-] TRAIN [020/60] | Ls=0.2925 | acc=0.8933 | rec=0.8857 | f1=0.8878 | aucpr=0.8834 | aucroc=0.9761
+VALIDATING [020/60]: : 111it [00:09, 12.03it/s]
+[-] VALID [020/60] | Ls=1.2376 | acc=0.6782 | rec=0.6517 | f1=0.6630 | aucpr=0.6522 | aucroc=0.8948
+[*] epoch time = 102.61s | lr = 0.01
+
+TRAINING [021/60]: : 451it [01:33,  4.84it/s, acc=0.946]
+[-] TRAIN [021/60] | Ls=0.1634 | acc=0.9457 | rec=0.9410 | f1=0.9419 | aucpr=0.9317 | aucroc=0.9870
+VALIDATING [021/60]: : 111it [00:09, 11.74it/s]
+[-] VALID [021/60] | Ls=1.1510 | acc=0.7102 | rec=0.6916 | f1=0.6981 | aucpr=0.6984 | aucroc=0.9109
+[*] epoch time = 103.01s | lr = 0.001
+
+TRAINING [022/60]: : 451it [01:33,  4.85it/s, acc=0.966]
+[-] TRAIN [022/60] | Ls=0.1121 | acc=0.9655 | rec=0.9628 | f1=0.9632 | aucpr=0.9532 | aucroc=0.9913
+VALIDATING [022/60]: : 111it [00:08, 12.96it/s]
+[-] VALID [022/60] | Ls=1.1865 | acc=0.7106 | rec=0.6904 | f1=0.6972 | aucpr=0.7041 | aucroc=0.9124
+[*] epoch time = 101.96s | lr = 0.001
+
+TRAINING [023/60]: : 451it [01:33,  4.84it/s, acc=0.972]
+[-] TRAIN [023/60] | Ls=0.0926 | acc=0.9724 | rec=0.9703 | f1=0.9710 | aucpr=0.9614 | aucroc=0.9928
+VALIDATING [023/60]: : 111it [00:08, 12.56it/s]
+[-] VALID [023/60] | Ls=1.2178 | acc=0.7102 | rec=0.6898 | f1=0.6993 | aucpr=0.7074 | aucroc=0.9133
+[*] epoch time = 102.16s | lr = 0.001
+
+TRAINING [024/60]: : 451it [01:33,  4.84it/s, acc=0.976]
+[-] TRAIN [024/60] | Ls=0.0824 | acc=0.9761 | rec=0.9748 | f1=0.9759 | aucpr=0.9673 | aucroc=0.9939
+VALIDATING [024/60]: : 111it [00:09, 12.19it/s]
+[-] VALID [024/60] | Ls=1.2432 | acc=0.7127 | rec=0.6902 | f1=0.7004 | aucpr=0.7089 | aucroc=0.9135
+[*] epoch time = 102.50s | lr = 0.001
+
+TRAINING [025/60]: : 451it [01:33,  4.84it/s, acc=0.979]
+[-] TRAIN [025/60] | Ls=0.0717 | acc=0.9794 | rec=0.9777 | f1=0.9781 | aucpr=0.9716 | aucroc=0.9947
+VALIDATING [025/60]: : 111it [00:09, 11.90it/s]
+[-] VALID [025/60] | Ls=1.2585 | acc=0.7123 | rec=0.6929 | f1=0.7018 | aucpr=0.7093 | aucroc=0.9134
+[*] epoch time = 102.86s | lr = 0.001
+
+TRAINING [026/60]: : 451it [01:33,  4.84it/s, acc=0.98]
+[-] TRAIN [026/60] | Ls=0.0680 | acc=0.9804 | rec=0.9803 | f1=0.9804 | aucpr=0.9724 | aucroc=0.9950
+VALIDATING [026/60]: : 111it [00:08, 12.91it/s]
+[-] VALID [026/60] | Ls=1.3007 | acc=0.7158 | rec=0.6972 | f1=0.7055 | aucpr=0.7100 | aucroc=0.9136
+[*] epoch time = 102.06s | lr = 0.001
+
+TRAINING [027/60]: : 451it [01:33,  4.84it/s, acc=0.982]
+[-] TRAIN [027/60] | Ls=0.0636 | acc=0.9820 | rec=0.9804 | f1=0.9811 | aucpr=0.9745 | aucroc=0.9953
+VALIDATING [027/60]: : 111it [00:08, 12.80it/s]
+[-] VALID [027/60] | Ls=1.3181 | acc=0.7145 | rec=0.6955 | f1=0.7031 | aucpr=0.7120 | aucroc=0.9136
+[*] epoch time = 102.02s | lr = 0.001
+
+TRAINING [028/60]: : 451it [01:33,  4.84it/s, acc=0.983]
+[-] TRAIN [028/60] | Ls=0.0581 | acc=0.9830 | rec=0.9790 | f1=0.9808 | aucpr=0.9763 | aucroc=0.9959
+VALIDATING [028/60]: : 111it [00:08, 12.67it/s]
+[-] VALID [028/60] | Ls=1.3301 | acc=0.7137 | rec=0.6951 | f1=0.7000 | aucpr=0.7109 | aucroc=0.9138
+[*] epoch time = 102.13s | lr = 0.001
+
+TRAINING [029/60]: : 451it [01:33,  4.84it/s, acc=0.984]
+[-] TRAIN [029/60] | Ls=0.0538 | acc=0.9845 | rec=0.9830 | f1=0.9833 | aucpr=0.9777 | aucroc=0.9961
+VALIDATING [029/60]: : 111it [00:09, 11.32it/s]
+[-] VALID [029/60] | Ls=1.3494 | acc=0.7134 | rec=0.6967 | f1=0.7031 | aucpr=0.7116 | aucroc=0.9138
+[*] epoch time = 103.12s | lr = 0.001
+
+TRAINING [030/60]: : 451it [01:33,  4.84it/s, acc=0.985]
+[-] TRAIN [030/60] | Ls=0.0524 | acc=0.9851 | rec=0.9826 | f1=0.9832 | aucpr=0.9785 | aucroc=0.9963
+VALIDATING [030/60]: : 111it [00:09, 12.06it/s]
+[-] VALID [030/60] | Ls=1.3582 | acc=0.7151 | rec=0.6957 | f1=0.7048 | aucpr=0.7130 | aucroc=0.9146
+[*] epoch time = 102.52s | lr = 0.001
+
+TRAINING [031/60]: : 451it [01:33,  4.84it/s, acc=0.986]
+[-] TRAIN [031/60] | Ls=0.0496 | acc=0.9856 | rec=0.9858 | f1=0.9855 | aucpr=0.9811 | aucroc=0.9966
+VALIDATING [031/60]: : 111it [00:09, 12.01it/s]
+[-] VALID [031/60] | Ls=1.3664 | acc=0.7120 | rec=0.6937 | f1=0.7005 | aucpr=0.7111 | aucroc=0.9132
+[*] epoch time = 102.56s | lr = 0.001
+
+TRAINING [032/60]: : 451it [01:33,  4.85it/s, acc=0.987]
+[-] TRAIN [032/60] | Ls=0.0464 | acc=0.9868 | rec=0.9847 | f1=0.9855 | aucpr=0.9815 | aucroc=0.9968
+VALIDATING [032/60]: : 111it [00:09, 12.22it/s]
+[-] VALID [032/60] | Ls=1.3908 | acc=0.7129 | rec=0.6951 | f1=0.7005 | aucpr=0.7123 | aucroc=0.9136
+[*] epoch time = 102.34s | lr = 0.001
+
+TRAINING [033/60]: : 451it [01:33,  4.84it/s, acc=0.987]
+[-] TRAIN [033/60] | Ls=0.0432 | acc=0.9873 | rec=0.9862 | f1=0.9868 | aucpr=0.9823 | aucroc=0.9969
+VALIDATING [033/60]: : 111it [00:09, 12.28it/s]
+[-] VALID [033/60] | Ls=1.3942 | acc=0.7123 | rec=0.6933 | f1=0.6992 | aucpr=0.7144 | aucroc=0.9139
+[*] epoch time = 102.32s | lr = 0.001
+
+TRAINING [034/60]: : 451it [01:33,  4.84it/s, acc=0.987]
+[-] TRAIN [034/60] | Ls=0.0453 | acc=0.9871 | rec=0.9842 | f1=0.9853 | aucpr=0.9817 | aucroc=0.9969
+VALIDATING [034/60]: : 111it [00:09, 11.69it/s]
+[-] VALID [034/60] | Ls=1.4098 | acc=0.7158 | rec=0.6964 | f1=0.7024 | aucpr=0.7101 | aucroc=0.9132
+[*] epoch time = 102.91s | lr = 0.001
+
+TRAINING [035/60]: : 451it [01:33,  4.84it/s, acc=0.987]
+[-] TRAIN [035/60] | Ls=0.0431 | acc=0.9872 | rec=0.9869 | f1=0.9867 | aucpr=0.9836 | aucroc=0.9972
+VALIDATING [035/60]: : 111it [00:09, 11.57it/s]
+[-] VALID [035/60] | Ls=1.4155 | acc=0.7134 | rec=0.6945 | f1=0.7007 | aucpr=0.7140 | aucroc=0.9133
+[*] epoch time = 102.89s | lr = 0.001
+
+TRAINING [036/60]: : 451it [01:33,  4.84it/s, acc=0.989]
+[-] TRAIN [036/60] | Ls=0.0408 | acc=0.9888 | rec=0.9878 | f1=0.9880 | aucpr=0.9841 | aucroc=0.9973
+VALIDATING [036/60]: : 111it [00:09, 11.62it/s]
+[-] VALID [036/60] | Ls=1.4425 | acc=0.7137 | rec=0.6963 | f1=0.7042 | aucpr=0.7128 | aucroc=0.9138
+[*] epoch time = 102.87s | lr = 0.001
+
+TRAINING [037/60]: : 451it [01:33,  4.84it/s, acc=0.988]
+[-] TRAIN [037/60] | Ls=0.0392 | acc=0.9882 | rec=0.9871 | f1=0.9875 | aucpr=0.9855 | aucroc=0.9975
+VALIDATING [037/60]: : 111it [00:09, 12.16it/s]
+[-] VALID [037/60] | Ls=1.4353 | acc=0.7160 | rec=0.6965 | f1=0.7055 | aucpr=0.7158 | aucroc=0.9139
+[*] epoch time = 102.52s | lr = 0.001
+
+TRAINING [038/60]: : 451it [01:33,  4.84it/s, acc=0.989]
+[-] TRAIN [038/60] | Ls=0.0389 | acc=0.9890 | rec=0.9888 | f1=0.9887 | aucpr=0.9856 | aucroc=0.9974
+VALIDATING [038/60]: : 111it [00:09, 11.85it/s]
+[-] VALID [038/60] | Ls=1.4534 | acc=0.7134 | rec=0.6946 | f1=0.7014 | aucpr=0.7151 | aucroc=0.9134
+[*] epoch time = 102.68s | lr = 0.001
+
+TRAINING [039/60]: : 451it [01:33,  4.85it/s, acc=0.989]
+[-] TRAIN [039/60] | Ls=0.0390 | acc=0.9889 | rec=0.9875 | f1=0.9879 | aucpr=0.9853 | aucroc=0.9974
+VALIDATING [039/60]: : 111it [00:09, 12.25it/s]
+[-] VALID [039/60] | Ls=1.4447 | acc=0.7112 | rec=0.6928 | f1=0.6974 | aucpr=0.7125 | aucroc=0.9136
+[*] epoch time = 102.31s | lr = 0.001
+
+TRAINING [040/60]: : 451it [01:33,  4.84it/s, acc=0.99]
+[-] TRAIN [040/60] | Ls=0.0357 | acc=0.9899 | rec=0.9886 | f1=0.9888 | aucpr=0.9864 | aucroc=0.9977
+VALIDATING [040/60]: : 111it [00:09, 12.06it/s]
+[-] VALID [040/60] | Ls=1.4542 | acc=0.7097 | rec=0.6937 | f1=0.6987 | aucpr=0.7143 | aucroc=0.9134
+[*] epoch time = 102.60s | lr = 0.001
+
+TRAINING [041/60]: : 451it [01:33,  4.84it/s, acc=0.989]
+[-] TRAIN [041/60] | Ls=0.0352 | acc=0.9894 | rec=0.9886 | f1=0.9885 | aucpr=0.9862 | aucroc=0.9977
+VALIDATING [041/60]: : 111it [00:08, 12.77it/s]
+[-] VALID [041/60] | Ls=1.4598 | acc=0.7112 | rec=0.6938 | f1=0.7001 | aucpr=0.7146 | aucroc=0.9137
+[*] epoch time = 102.00s | lr = 0.0001
+
+TRAINING [042/60]: : 451it [01:33,  4.84it/s, acc=0.991]
+[-] TRAIN [042/60] | Ls=0.0323 | acc=0.9913 | rec=0.9893 | f1=0.9900 | aucpr=0.9865 | aucroc=0.9979
+VALIDATING [042/60]: : 111it [00:09, 12.01it/s]
+[-] VALID [042/60] | Ls=1.4535 | acc=0.7133 | rec=0.6952 | f1=0.7009 | aucpr=0.7146 | aucroc=0.9139
+[*] epoch time = 102.57s | lr = 0.0001
+
+TRAINING [043/60]: : 451it [01:33,  4.84it/s, acc=0.99]
+[-] TRAIN [043/60] | Ls=0.0341 | acc=0.9902 | rec=0.9879 | f1=0.9884 | aucpr=0.9867 | aucroc=0.9978
+VALIDATING [043/60]: : 111it [00:09, 11.17it/s]
+[-] VALID [043/60] | Ls=1.4758 | acc=0.7116 | rec=0.6939 | f1=0.7011 | aucpr=0.7143 | aucroc=0.9135
+[*] epoch time = 103.30s | lr = 0.0001
+
+TRAINING [044/60]: : 451it [01:33,  4.85it/s, acc=0.99]
+[-] TRAIN [044/60] | Ls=0.0322 | acc=0.9903 | rec=0.9892 | f1=0.9896 | aucpr=0.9878 | aucroc=0.9979
+VALIDATING [044/60]: : 111it [00:09, 11.63it/s]
+[-] VALID [044/60] | Ls=1.4579 | acc=0.7123 | rec=0.6938 | f1=0.7014 | aucpr=0.7149 | aucroc=0.9138
+[*] epoch time = 102.79s | lr = 0.0001
+
+TRAINING [045/60]: : 451it [01:33,  4.84it/s, acc=0.991]
+[-] TRAIN [045/60] | Ls=0.0327 | acc=0.9911 | rec=0.9911 | f1=0.9912 | aucpr=0.9876 | aucroc=0.9979
+VALIDATING [045/60]: : 111it [00:09, 12.06it/s]
+[-] VALID [045/60] | Ls=1.4698 | acc=0.7124 | rec=0.6939 | f1=0.7026 | aucpr=0.7149 | aucroc=0.9136
+[*] epoch time = 102.50s | lr = 0.0001
+
+TRAINING [046/60]: : 451it [01:33,  4.84it/s, acc=0.991]
+[-] TRAIN [046/60] | Ls=0.0325 | acc=0.9905 | rec=0.9899 | f1=0.9902 | aucpr=0.9877 | aucroc=0.9979
+VALIDATING [046/60]: : 111it [00:08, 12.63it/s]
+[-] VALID [046/60] | Ls=1.4723 | acc=0.7121 | rec=0.6934 | f1=0.6988 | aucpr=0.7153 | aucroc=0.9140
+[*] epoch time = 102.08s | lr = 0.0001
+
+TRAINING [047/60]: : 451it [01:33,  4.85it/s, acc=0.991]
+[-] TRAIN [047/60] | Ls=0.0343 | acc=0.9906 | rec=0.9898 | f1=0.9897 | aucpr=0.9876 | aucroc=0.9978
+VALIDATING [047/60]: : 111it [00:09, 12.12it/s]
+[-] VALID [047/60] | Ls=1.4676 | acc=0.7143 | rec=0.6953 | f1=0.7020 | aucpr=0.7157 | aucroc=0.9142
+[*] epoch time = 102.42s | lr = 0.0001
+
+TRAINING [048/60]: : 451it [01:33,  4.85it/s, acc=0.991]
+[-] TRAIN [048/60] | Ls=0.0321 | acc=0.9908 | rec=0.9903 | f1=0.9905 | aucpr=0.9880 | aucroc=0.9979
+VALIDATING [048/60]: : 111it [00:09, 12.19it/s]
+[-] VALID [048/60] | Ls=1.4636 | acc=0.7124 | rec=0.6941 | f1=0.6982 | aucpr=0.7160 | aucroc=0.9146
+[*] epoch time = 102.33s | lr = 0.0001
+
+TRAINING [049/60]: : 451it [01:33,  4.85it/s, acc=0.99]
+[-] TRAIN [049/60] | Ls=0.0337 | acc=0.9904 | rec=0.9890 | f1=0.9900 | aucpr=0.9865 | aucroc=0.9979
+VALIDATING [049/60]: : 111it [00:09, 11.89it/s]
+[-] VALID [049/60] | Ls=1.4680 | acc=0.7116 | rec=0.6941 | f1=0.6987 | aucpr=0.7154 | aucroc=0.9143
+[*] epoch time = 102.56s | lr = 0.0001
+
+TRAINING [050/60]: : 451it [01:33,  4.81it/s, acc=0.99]
+[-] TRAIN [050/60] | Ls=0.0335 | acc=0.9902 | rec=0.9882 | f1=0.9890 | aucpr=0.9869 | aucroc=0.9979
+VALIDATING [050/60]: : 111it [00:09, 12.28it/s]
+[-] VALID [050/60] | Ls=1.4643 | acc=0.7126 | rec=0.6951 | f1=0.6977 | aucpr=0.7147 | aucroc=0.9142
+[*] epoch time = 102.95s | lr = 0.0001
+
+TRAINING [051/60]: : 451it [01:33,  4.84it/s, acc=0.991]
+[-] TRAIN [051/60] | Ls=0.0299 | acc=0.9913 | rec=0.9897 | f1=0.9905 | aucpr=0.9880 | aucroc=0.9980
+VALIDATING [051/60]: : 111it [00:08, 12.54it/s]
+[-] VALID [051/60] | Ls=1.4709 | acc=0.7106 | rec=0.6930 | f1=0.7004 | aucpr=0.7159 | aucroc=0.9138
+[*] epoch time = 102.15s | lr = 0.0001
+
+TRAINING [052/60]: : 451it [01:33,  4.85it/s, acc=0.991]
+[-] TRAIN [052/60] | Ls=0.0305 | acc=0.9913 | rec=0.9898 | f1=0.9905 | aucpr=0.9876 | aucroc=0.9980
+VALIDATING [052/60]: : 111it [00:09, 11.79it/s]
+[-] VALID [052/60] | Ls=1.4718 | acc=0.7124 | rec=0.6949 | f1=0.7013 | aucpr=0.7154 | aucroc=0.9140
+[*] epoch time = 102.66s | lr = 0.0001
+
+TRAINING [053/60]: : 451it [01:33,  4.85it/s, acc=0.991]
+[-] TRAIN [053/60] | Ls=0.0320 | acc=0.9911 | rec=0.9911 | f1=0.9901 | aucpr=0.9879 | aucroc=0.9980
+VALIDATING [053/60]: : 111it [00:09, 12.29it/s]
+[-] VALID [053/60] | Ls=1.4611 | acc=0.7140 | rec=0.6954 | f1=0.7016 | aucpr=0.7154 | aucroc=0.9140
+[*] epoch time = 102.31s | lr = 0.0001
+
+TRAINING [054/60]: : 451it [01:32,  4.85it/s, acc=0.991]
+[-] TRAIN [054/60] | Ls=0.0325 | acc=0.9910 | rec=0.9881 | f1=0.9895 | aucpr=0.9868 | aucroc=0.9979
+VALIDATING [054/60]: : 111it [00:08, 12.52it/s]
+[-] VALID [054/60] | Ls=1.4767 | acc=0.7119 | rec=0.6940 | f1=0.6989 | aucpr=0.7166 | aucroc=0.9139
+[*] epoch time = 102.03s | lr = 0.0001
+
+TRAINING [055/60]: : 451it [01:33,  4.85it/s, acc=0.991]
+[-] TRAIN [055/60] | Ls=0.0316 | acc=0.9906 | rec=0.9898 | f1=0.9902 | aucpr=0.9876 | aucroc=0.9980
+VALIDATING [055/60]: : 111it [00:08, 12.72it/s]
+[-] VALID [055/60] | Ls=1.4732 | acc=0.7124 | rec=0.6952 | f1=0.7009 | aucpr=0.7164 | aucroc=0.9141
+[*] epoch time = 101.96s | lr = 0.0001
+
+TRAINING [056/60]: : 451it [01:33,  4.84it/s, acc=0.991]
+[-] TRAIN [056/60] | Ls=0.0327 | acc=0.9908 | rec=0.9909 | f1=0.9910 | aucpr=0.9885 | aucroc=0.9980
+VALIDATING [056/60]: : 111it [00:08, 12.65it/s]
+[-] VALID [056/60] | Ls=1.4727 | acc=0.7126 | rec=0.6926 | f1=0.7009 | aucpr=0.7149 | aucroc=0.9142
+[*] epoch time = 102.11s | lr = 0.0001
+
+TRAINING [057/60]: : 451it [01:33,  4.84it/s, acc=0.992]
+[-] TRAIN [057/60] | Ls=0.0293 | acc=0.9922 | rec=0.9918 | f1=0.9918 | aucpr=0.9891 | aucroc=0.9981
+VALIDATING [057/60]: : 111it [00:09, 12.15it/s]
+[-] VALID [057/60] | Ls=1.4706 | acc=0.7095 | rec=0.6931 | f1=0.6971 | aucpr=0.7156 | aucroc=0.9138
+[*] epoch time = 102.45s | lr = 0.0001
+
+TRAINING [058/60]: : 451it [01:33,  4.85it/s, acc=0.992]
+[-] TRAIN [058/60] | Ls=0.0302 | acc=0.9920 | rec=0.9911 | f1=0.9909 | aucpr=0.9882 | aucroc=0.9980
+VALIDATING [058/60]: : 111it [00:08, 12.82it/s]
+[-] VALID [058/60] | Ls=1.4688 | acc=0.7129 | rec=0.6949 | f1=0.7005 | aucpr=0.7154 | aucroc=0.9143
+[*] epoch time = 101.93s | lr = 0.0001
+
+TRAINING [059/60]: : 451it [01:33,  4.85it/s, acc=0.992]
+[-] TRAIN [059/60] | Ls=0.0299 | acc=0.9916 | rec=0.9910 | f1=0.9913 | aucpr=0.9885 | aucroc=0.9981
+VALIDATING [059/60]: : 111it [00:08, 12.63it/s]
+[-] VALID [059/60] | Ls=1.4873 | acc=0.7131 | rec=0.6940 | f1=0.6992 | aucpr=0.7162 | aucroc=0.9143
+[*] epoch time = 102.06s | lr = 0.0001
+
+TRAINING [060/60]: : 451it [01:33,  4.85it/s, acc=0.991]
+[-] TRAIN [060/60] | Ls=0.0304 | acc=0.9911 | rec=0.9899 | f1=0.9905 | aucpr=0.9877 | aucroc=0.9980
+VALIDATING [060/60]: : 111it [00:08, 12.49it/s]
+[-] VALID [060/60] | Ls=1.4887 | acc=0.7136 | rec=0.6959 | f1=0.7021 | aucpr=0.7171 | aucroc=0.9140

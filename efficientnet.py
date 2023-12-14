@@ -194,6 +194,7 @@ def train(train_loader, model, criterion, optimizer, epoch, cfg):
 
             # compute output
             output = model(images)
+            summary(model, x)
 
             l_softmax = criterion['softmax'](output, target)
             # l_center = criterion['center'](feat, target)

@@ -4,3 +4,8 @@
 
 # result
 see result at https://www.kaggle.com/code/airundatago/notebook8fd9c23d70/log?scriptVersionId=154897354
+
+# 注
+本项目为FZU CV课程个人作业 全球首发与2024.12.13 HR同学所属~
+main.py为DACL对比实验
+efficientnet.py 为迁移学习实验
